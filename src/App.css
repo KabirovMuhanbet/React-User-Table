@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+body {
+   font-family: "Montserrat", sans-serif;
+   font-size: 18px;
+   background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,209,67,1) 0%, rgba(255,145,83,1) 90% );
+   min-height: 100vh;
+}
+button {
+   font-family: "Montserrat", sans-serif;
+   font-size: 14px;
+   font-weight: 700;
+   cursor: pointer;
+}
+.app {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 0 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table {
+   border-collapse: collapse;
+   width: 100%;
+}
+th,
+td {
+   border: 1px solid #ffffff;
+   text-align: left;
+   padding: 8px;
+   background-color: rgba(255, 255, 255, 0.8);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+th {
+   text-transform: uppercase;
+   font-size: 14px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.formTitle {
+   display: block;
+   width: 100%;
+   text-transform: uppercase;
+   font-size: 14px;
+   text-align: center;
+   margin: 0;
+   margin-bottom: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.count {
+   font-size: 24px;
+   line-height: 26px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addForm {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   background-color: rgba(255, 255, 255, 0.8);
+   padding: 10px 20px;
+   border-radius: 5px;
+   width: 80%;
+   margin-bottom: 10px;
+}
+.addForm input {
+   width: 20%;
+   margin-right: 20px;
+}
+input {
+   font-family: "Montserrat", sans-serif;
+   border: none;
+   outline: none;
+   padding: 6px 10px 6px 0;
+   border-bottom: 1px solid black;
+   background-color: transparent;
+   font-size: 18px;
+}
+input::placeholder {
+   font-family: "Montserrat", sans-serif;
+   font-size: 18px;
+}
+.editBox {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 2px 2px;
+}
+.addBtn {
+   padding: 10px;
+   margin-top: 10px;
+   border-radius: 5px;
+   background-color: black;
+   border: none;
+   color: #ffffff;
+}
+.deleteBtn {
+   padding: 6px;
+   background-color: red;
+   border: none;
+   border-radius: 0 5px 5px 0;
+   color: #ffffff;
+}
+.editBtn {
+   padding: 6px;
+   background-color: green;
+   border: none;
+   border-radius: 5px 0 0 5px;
+   color: #ffffff;
+}
+.closeBtn {
+   padding: 8px;
+   background-color: red;
+   border: none;
+   border-radius: 0 5px 5px 0;
+   color: #ffffff;
+}
+.saveBtn {
+   padding: 8px;
+   background-color: green;
+   border: none;
+   border-radius: 5px 0 0 5px;
+   color: #ffffff;
 }
