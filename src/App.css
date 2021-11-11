@@ -61,6 +61,7 @@ th {
    width: 20%;
    margin-right: 20px;
 }
+
 input {
    font-family: "Montserrat", sans-serif;
    border: none;
@@ -74,6 +75,14 @@ input::placeholder {
    font-family: "Montserrat", sans-serif;
    font-size: 18px;
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
 .editBox {
    display: flex;
    justify-content: center;
