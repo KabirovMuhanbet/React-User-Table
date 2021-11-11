@@ -2,7 +2,7 @@ import React from 'react'
 
 function ReadOnly(props) {
    return (
-      <tr key={props.user.id}>
+      <tr>
          <td>{props.user.name}</td>
          <td>{props.user.address.city}</td>
          <td>{props.user.phone}</td>

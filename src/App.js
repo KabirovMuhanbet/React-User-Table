@@ -150,8 +150,9 @@ function App() {
          </form>
          <form onSubmit={handleEditFormSubmit}>
             <table>
-               <thead>
-                  <tr>
+               <thead key="200">
+                  <tr
+                  key="">
                      <th>имя</th>
                      <th>адрес</th>
                      <th>телефон</th>
@@ -161,7 +162,7 @@ function App() {
                </thead>
                <tbody>
                   {users.map(user => (
-                     <Fragment>
+                     <Fragment key={user.id}>
                         {editUserId === user.id ?
                            <UserEdit handleEditFormChange={handleEditFormChange}
                               editUser={editUser}
